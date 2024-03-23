@@ -1,46 +1,72 @@
-Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
-W projekcie wykorzystamy virtual environment, dla utworzenia hermetycznego środowisko dla aplikacji:
+# Simple Flask App
 
-# tworzymy hermetyczne środowisko dla bibliotek aplikacji:
-python3 -m venv .venv
+Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
+o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
-# aktywowanie hermetycznego środowiska
-source .venv/bin/activate
-pip install -r requirements.txt
-pip install -r test_requirements.txt
+- W projekcie wykorzystamy virtual environment, dla utworzenia hermetycznego środowisko dla aplikacji:
 
-# zobacz
-pip list
-Sprawdź: tutorial venv oraz biblioteki flask.
+  ```bash
+  # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
+  python3 -m venv .venv
 
-Uruchamianie applikacji:
+  # aktywowanie hermetycznego środowiska
+  source .venv/bin/activate
+  pip install -r requirements.txt
+  pip install -r test_requirements.txt
 
-# jako zwykły program
-python main.py
+  # zobacz
+  pip list
+  ```
 
-# albo mozemy uruchomic w taki sposob:
-PYTHONPATH=. FLASK_APP=hello_world flask run
-# w przegladarce lub za pomoca curl
-curl 127.0.0.1:5000/
-Uruchamianie testów (see: http://doc.pytest.org/en/latest/capture.html):
+  Sprawdź: [tutorial venv](https://docs.python.org/3/tutorial/venv.html) oraz [biblioteki flask](http://flask.pocoo.org).
 
-PYTHONPATH=. py.test
-PYTHONPATH=. py.test --verbose -s
-Przydatne komendy:
+- Uruchamianie applikacji:
 
-Deaktywacja srodowiska wirtualego
+  ```bash
+  # jako zwykły program
+  python main.py
 
- # deaktywacja
- deactivate
-Aktywacja, jeśli wracamy do projektu gdzie jest już środowisko wirtalne
+  # albo mozemy uruchomic w taki sposob:
+  PYTHONPATH=. FLASK_APP=hello_world flask run
+  ```
+  
+  ```bash
+  # w przegladarce lub za pomoca curl
+  curl 127.0.0.1:5000/
+  ```
 
-# spradzenie czy widzimy katalog (.venv)
-# gdzie jest wirtualne srodowisko
-ls -a
+- Uruchamianie testów (see: http://doc.pytest.org/en/latest/capture.html):
 
-# aktywacja 
-source .venv/bin/activate
-Miejsce na twoje notatki:
+  ```bash
+  PYTHONPATH=. py.test
+  PYTHONPATH=. py.test --verbose -s
+  ```
 
-# miejsce na twoje notatki
+- Przydatne komendy:
+  - Deaktywacja srodowiska wirtualego
+
+    ```bash
+     # deaktywacja
+     deactivate
+     ```
+     
+  - Aktywacja, jeśli wracamy do projektu gdzie jest już środowisko wirtalne
+  
+    ```bash
+    # spradzenie czy widzimy katalog (.venv)
+    # gdzie jest wirtualne srodowisko
+    ls -a
+
+    # aktywacja 
+    source .venv/bin/activate
+    ```
+
+- Miejsce na twoje notatki:
+
+  ```bash
+  # miejsce na twoje notatki
+  ```
+
+
+
