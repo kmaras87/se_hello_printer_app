@@ -6,8 +6,8 @@ WORKDIR /tmp
 ADD requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
-RUN mkdir -p -$APP_DIR
-ADD hello_world/ $APP_DIR/hello_world
+RUN mkdir -p $APP_DIR
+ADD hello_world/ $APP_DIR/hello_world/
 ADD main.py $APP_DIR
 
 WORKDIR $APP_DIR
